@@ -5,5 +5,8 @@ Rails.application.routes.draw do
   # root "articles#index"
 
   get "/accounts", to: "accounts#index"
+  post "/accounts", to: "accounts#create"
   get "/accounts/:id", to: "accounts#read"
+  put "/accounts/:id", to: "accounts#update"
+  delete "/accounts/:id", to: "accounts#destroy"
 end
